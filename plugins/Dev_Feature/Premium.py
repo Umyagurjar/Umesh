@@ -33,7 +33,7 @@ async def check_expired_premium(client):
             except Exception as e:
                 pass
             await sleep(0.5)
-        await sleep(2200)
+        await sleep(86000)
 	    
 @Client.on_message(filters.command("remove_premium") & filters.user(ADMINS))
 async def remove_premium(client, message):
